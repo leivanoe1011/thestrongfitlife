@@ -1,5 +1,3 @@
-
-
 import React, { createContext, useState, useEffect } from 'react';
 
 // import AuthService from "../setupTests/AuthService";

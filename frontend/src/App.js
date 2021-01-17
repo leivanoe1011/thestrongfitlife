@@ -1,9 +1,8 @@
-
-
 import React from "react";
 
 import { Router } from 'react-router-dom';
 
+import "bootstrap/dist/css/bootstrap.css"
 
 import NavBar from "./Components/NavBar";
 import MainBody from "./Components/MainBody";
@@ -12,7 +11,7 @@ import Routes from "./Components/Routes";
 
 import "./styles/app.css";
 
-import history from './Services/History';
+import history from './Services/History.js';
 
 // const history = createBrowserHistory();
 
