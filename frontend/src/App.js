@@ -1,9 +1,8 @@
-
-
 import React from "react";
 
 import { Router } from 'react-router-dom';
 
+import "bootstrap/dist/css/bootstrap.css"
 
 import NavBar from "./Components/NavBar";
 import MainBody from "./Components/MainBody";

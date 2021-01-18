@@ -84,7 +84,9 @@ io.use(async (socket, next) => {
         // Return the Object with the verification information above
         next();
     }
-    catch(err){}
+    catch(err){
+      console.log(err)
+    }
 });
 
 

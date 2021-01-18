@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect, useContext } from 'react';
 
 import {
@@ -83,7 +81,6 @@ function NavBar() {
         return (
             <>
                 {(role === "teacher" && role === "admin") ? <Button href="/createForm">Create Assignment</Button> : null}
-
             </>
         )
     }
