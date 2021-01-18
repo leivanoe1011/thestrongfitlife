@@ -12,7 +12,7 @@ import Routes from "./Components/Routes";
 
 import "./styles/app.css";
 
-import history from './Services/History';
+import history from './Services/History.js';
 
 // const history = createBrowserHistory();
 
