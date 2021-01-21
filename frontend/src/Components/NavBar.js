@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect, useContext } from 'react';
 
 import {
@@ -81,6 +83,7 @@ function NavBar() {
         return (
             <>
                 {(role === "teacher" && role === "admin") ? <Button href="/createForm">Create Assignment</Button> : null}
+
             </>
         )
     }
@@ -93,16 +96,9 @@ function NavBar() {
                 <Button href="/classCreate">Create Class</Button>
                 <Button href="/adminCreateUser">Admin Create User</Button> */}
 
-                <li className="nav-item">
-                    <Link className="nav-link" to="/classCreate">Create Class</Link>
-                </li>
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/adminCreateUser">Create User</Link>
-                </li>
-
-                <li className="nav-item">
-                    <Link className="nav-link" to="/createForm">Create Assignment</Link>
                 </li>
 
 
@@ -119,10 +115,6 @@ function NavBar() {
 
                 <li className="nav-item">
                     <Link className="nav-link" to="/dashboard">Dashboard</Link>
-                </li>
-
-                <li className="nav-item">
-                    <Link className="nav-link" to="/allAssignments">all assignments</Link>
                 </li>
 
                 <li className="nav-item">

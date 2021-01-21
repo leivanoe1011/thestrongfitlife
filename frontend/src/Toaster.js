@@ -1,3 +1,5 @@
+
+
 import Swal from "sweetalert2";
 
 const Toast = Swal.mixin({
@@ -20,3 +22,5 @@ const makeToast = (type, msg) => {
 };
 
 export default makeToast;
+
+

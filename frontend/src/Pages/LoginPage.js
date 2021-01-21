@@ -1,7 +1,7 @@
 import React from "react";
 import makeToast from "../Toaster";
+import axios from "axios";
 import { withRouter } from "react-router-dom";
-import AuthService from "../Services/AuthService";
 
 const LoginPage = (props) => {
 
@@ -9,51 +9,45 @@ const LoginPage = (props) => {
   const emailRef = React.createRef();
   const passwordRef = React.createRef();
 
-  const loginUser = (e) => {
+  const loginUser = () => {
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
 
-    e.preventDefault();
-
-    // console.log(props);
-
-
-    const user = {
-      email : emailRef.current.value,
-      password : passwordRef.current.value
-    }
-
-
-    AuthService.login(user)
-    .then((response) => { 
-
+    axios
+      .post("http://localhost:8000/user/login", {
+        email,
+        password,
+      })
       // The response contains the Success Message and Token from the 
       // User Controller Login Function in the Back End
-      console.log("After logged In");
-      
-      
-      console.log(response.data);
-
-      makeToast("success", response.data.message);
-
-      // Here we load the Token to the Local Storage
-      // The App JS will get the Token
-      localStorage.setItem("CC_Token", response.data.token);
-
-      localStorage.setItem("CC_UserId", response.data.userId)
-
-      // localStorage.setItem("User_Role", response.data.role);
-
-      // After user is logged in, we load the Dashboard page
-      // This is possible with the withRouter React Function at the end
-      props.history.push("/dashboard");
+      .then((response) => { 
 
 
-      // Call the setup Socket function from the APP.JS
-      // This will get the Token stored above in the Local Storage
-      props.setupSocket();
+        console.log("After logged In");
+        
+        console.log(response.data);
 
 
-    })
-    .catch((err) => {
+        makeToast("success", response.data.message);
+
+        // Here we load the Token to the Local Storage
+        // The App JS will get the Token
+        localStorage.setItem("CC_Token", response.data.token);
+
+        localStorage.setItem("User_Role", response.data.role);
+
+        // After user is logged in, we load the Dashboard page
+        // This is possible with the withRouter React Function at the end
+        props.history.push("/dashboard");
+
+
+        // Call the setup Socket function from the APP.JS
+        // This will get the Token stored above in the Local Storage
+        props.setupSocket();
+
+
+      })
+      .catch((err) => {
         // console.log(err);
         if (
           err &&
@@ -62,8 +56,7 @@ const LoginPage = (props) => {
           err.response.data.message
         )
           makeToast("error", err.response.data.message);
-    });
-     
+      });
   };
 
   return (

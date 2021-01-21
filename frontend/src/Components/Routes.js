@@ -10,6 +10,7 @@ import LoginPage from "./LoginPage";
 import RegisterPage from "./RegisterPage";
 import DashboardPage from "./DashboardPage";
 import CreateUserPage from "./CreateUserPage";
+import ChatroomPage from "./ChatPage";
 
 
 function Router(){
@@ -21,6 +22,8 @@ function Router(){
                 <UnPrivateRoute exact path="/register" component={RegisterPage}  />
                 <PrivateRoute exact path="/dashboard" roles={["admin","user"]} component={DashboardPage}  />
                 <PrivateRoute exact path="/createuser" roles={["admin"]} component={CreateUserPage}  />
+                {/* The socket lives within the Auth Context */}
+                <PrivateRoute path="/chatroom/:id" roles={["admin","user"]} component={ChatroomPage}/> 
             </Switch>
         </div>
     )

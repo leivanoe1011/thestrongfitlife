@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 // import React, { useState, useContext, useEffect } from "react";
 import AuthService from "../Services/AuthService";
@@ -15,7 +16,7 @@ function Login (props) {
     // Use Context will use the Auth Context file which contains the Autherization
     // of the user
     const authContext = useContext(AuthContext);
-    const { setUser, setRole } = useContext(AuthContext);
+    const { setUserId, setRole } = useContext(AuthContext);
 
    
     const loginUser = (e) => {
@@ -31,7 +32,7 @@ function Login (props) {
         AuthService.login(user)
         .then((response) => {
 
-            const { message, token, role } = response;
+            const { message, token, role, userId } = response;
 
             makeToast("success", message);
 
@@ -41,7 +42,7 @@ function Login (props) {
 
             localStorage.setItem("CC_role", role);
 
-            setUser(token);
+            setUserId(userId);
  
             setRole(role);
 

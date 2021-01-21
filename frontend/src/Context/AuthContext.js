@@ -1,3 +1,5 @@
+
+
 import React, { createContext, useState, useEffect } from 'react';
 
 // import AuthService from "../setupTests/AuthService";
@@ -8,12 +10,12 @@ export const AuthContext = createContext();
 
 export default ({children}) => {
 
-
     // The login page will set up the authenticated, role
     const [socket, setSocket] = useState(null);
-    const [user, setUser] = useState(null);
+    const [userId, setUserId] = useState(null);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [role, setRole] = useState("");
+
 
 
     // Once the user is logged in, then they go to the Local Storage 
@@ -43,7 +45,6 @@ export default ({children}) => {
                 },
             });
 
-            console.log(newSocket)
 
             newSocket.on("disconnect", () => {
 
@@ -84,7 +85,7 @@ export default ({children}) => {
     return (
         <div>
            {/* The variables below will be available to be accessed to all Lower Level components */}
-            <AuthContext.Provider value={{ user, setUser, isAuthenticated, setIsAuthenticated, role, setRole, setupSocket}}>
+            <AuthContext.Provider value={{ userId, setUserId, isAuthenticated, setIsAuthenticated, role, setRole, setupSocket, socket}}>
                 { children }
             </AuthContext.Provider>
         </div>

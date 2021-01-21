@@ -1,28 +1,18 @@
 
 import React from "react";
 
-import Body from "./DashboardBody";
+// import Body from "./DashboardBody";
+import Chat from "./CreateChatPage";
+
 
 function Dashboard() {
 
     return(
         <section>
-            
+                       
+            {/* Chatbox */}
             <div className="container">
-                <div className="row">
-                    <div className="col-sm-8">
-                        <Body />
-                    </div>
-                    <div className="col-sm-4">
-                        <Body />
-                    </div>
-                </div>
-            </div>
-
-            <div className="container">
-                <div className="row">
-                    <Body />
-                </div>
+                <Chat/>
             </div>
             
         </section>
