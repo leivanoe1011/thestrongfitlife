@@ -1,7 +1,7 @@
 
 import React from "react"
 
-import "../styles/app.css"
+// import "../styles/App.css"
 
 function MainBody(props) {
 
