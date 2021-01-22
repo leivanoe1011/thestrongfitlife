@@ -1,13 +1,14 @@
 
 
 import React from "react";
+import logo from "../../images/StrongLifeLogo.png"
 
 function MidNavContent() {
 
     return (
         <>
 
-            <a class="navbar-brand d-none d-lg-block" href="#">Navbar</a>
+            <img style={{width:125}} className="d-none d-lg-block" src={logo}/>
            
         </>
     )
