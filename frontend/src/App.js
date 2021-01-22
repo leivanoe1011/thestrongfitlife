@@ -5,12 +5,12 @@ import React from "react";
 import { Router } from 'react-router-dom';
 
 
-import NavBar from "./Components/NavBar";
-import MainBody from "./Components/MainBody";
+import NavBar from "./Components/NavBar/NavBar";
+import MainBody from "./Components/Home/MainBody";
 import Footer from "./Components/Footer";
-import Routes from "./Components/Routes";
+import Routes from "./Services/RoutesServices";
 
-import "./styles/app.css";
+import "./styles/App.css";
 
 import history from './Services/History';
 
@@ -29,7 +29,7 @@ function App() {
               {/* Start of NavBar */}
               <div className="navContainer">
 
-                  <div className="container">
+                  <div className="container-flex">
                     <NavBar className="row" />
                   </div>
 

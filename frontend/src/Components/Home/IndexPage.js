@@ -6,7 +6,7 @@ import Header from "./IndexHeader";
 import Login from "./IndexLogin";
 import Body from "./IndexBody";
 
-import { AuthContext } from "../Context/AuthContext";
+import { AuthContext } from "../../Context/AuthContext";
 
 function Index () {
 

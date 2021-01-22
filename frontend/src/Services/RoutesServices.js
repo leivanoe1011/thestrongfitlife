@@ -5,12 +5,12 @@ import { Switch, Route } from "react-router-dom";
 
 import PrivateRoute from "../hoc/PrivateRoute";
 import UnPrivateRoute from "../hoc/UnPrivateRoute";
-import IndexPage from "./IndexPage";
-import LoginPage from "./LoginPage";
-import RegisterPage from "./RegisterPage";
-import DashboardPage from "./DashboardPage";
-import CreateUserPage from "./CreateUserPage";
-import ChatroomPage from "./ChatPage";
+import IndexPage from "../Components/Home/IndexPage";
+import LoginPage from "../Components/LoginPage";
+import RegisterPage from "../Components/CreateUser/RegisterPage";
+import DashboardPage from "../Components/Dashboard/DashboardPage";
+import CreateUserPage from "../Components/Chat/CreateUserPage";
+import ChatroomPage from "../Components/Chat/ChatPage";
 
 
 function Router(){
