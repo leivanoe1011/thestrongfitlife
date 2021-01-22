@@ -28,7 +28,7 @@ function NavBar() {
 
                         </ul>
 
-                            <MidNavContent/>
+                            <MidNavContent />
     
 
                         <ul className="navbar-nav">
