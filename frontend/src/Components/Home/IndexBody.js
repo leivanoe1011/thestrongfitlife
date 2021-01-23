@@ -1,7 +1,7 @@
 
 import React from "react";
 
-import "./indexPg.css"
+import "./style.css"
 
 function IndexBody() {
 

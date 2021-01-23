@@ -45,9 +45,10 @@ const server = app.listen(PORT, () => {
 const io = require("socket.io")(server, {
   cors: {
     origin: "http://localhost:3000",
-    methods: ["GET", "POST"]
+    methods: ["GET", "POST", "PUT"]
   }
 });
+
 
 const jwt = require("jwt-then");
 
@@ -79,8 +80,6 @@ io.use(async (socket, next) => {
         // the Role property that we stored at signin
         socket.role = payload.role;
 
-        socket.dbId = "hello";
-
 
         // Return the Object with the verification information above
         next();
@@ -103,17 +102,20 @@ io.on("connection", async (socket) => {
     socket.on("disconnect", () => {
       console.log("Disconnected: " + socket.userId);
     });
+
   
     socket.on("joinRoom", ({ chatroomId }) => {
       socket.join(chatroomId);
       console.log("A user joined chatroom: " + chatroomId);
     });
   
+
     socket.on("leaveRoom", ({ chatroomId }) => {
       socket.leave(chatroomId);
       console.log("A user left chatroom: " + chatroomId);
     });
   
+    
     // Making the function below an ASYNC function to wait until we find
     // The user ID
     socket.on("chatroomMessage", async ({ chatroomId, message }) => {
