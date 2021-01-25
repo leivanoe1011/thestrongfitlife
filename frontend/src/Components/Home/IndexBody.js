@@ -53,7 +53,7 @@ function IndexBody() {
                         >
                             <div className="image-button-inner">
                                 {/* <a href="/about">My Story</a> */}
-                                <button type="button" class="btn btn-primary">My Story</button>
+                                <button type="button" className="btn btn-primary">My Story</button>
                             </div>
                         </div>
                     </div>

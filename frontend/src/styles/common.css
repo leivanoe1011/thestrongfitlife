@@ -11,18 +11,8 @@ body {
 }
 
 
-
-.navContainer{
-  width: 100%;
-  background-color: #f8f9fa !important;
-  margin-bottom: 10px;
-
-}
-
 .footer {
-  
-  position: relative; /* Most important setting for sticky footer */
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 60px;
