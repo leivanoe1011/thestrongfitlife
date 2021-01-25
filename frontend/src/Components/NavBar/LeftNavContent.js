@@ -14,18 +14,15 @@ function LeftNav(){
 
     
     const unauthenticatedNavBar = () => {
-    
+
         return (
             <>
-                
                 <li className="nav-item">
                     <Link className="nav-link" to="/features">MY STORY</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link" to="/contact">PROGRAMS</Link>
                 </li>
-
-    
             </>
         )
     }

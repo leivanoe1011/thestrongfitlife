@@ -10,9 +10,7 @@ import "./styles/chatroom.css";
 
 
 ReactDOM.render(
-  
   <AuthProvider>
     <App />
   </AuthProvider>, document.getElementById('root')
-
 );

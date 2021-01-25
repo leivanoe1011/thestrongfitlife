@@ -9,9 +9,11 @@ function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        
         <Link className="nav-link" to="/">
           Home
         </Link>
+
         <button
           className="navbar-toggler justify-content-end"
           type="button"
