@@ -1,22 +1,25 @@
+
 import React, { useContext } from "react";
+
 
 import Header from "./IndexHeader";
 // import Login from "./IndexLogin";
 import Body from "./IndexBody";
 
-// import { AuthContext } from "../../Context/AuthContext";
+import { AuthContext } from "../../Context/AuthContext";
 
-function Index() {
-  // const { isAuthenticated } = useContext(AuthContext);
+function Index () {
 
-  return (
-    <section>
-      {/* Header */}
-      <div className="container">
-        <Header />
-      </div>
+    // const { isAuthenticated } = useContext(AuthContext);
 
-      {/* <div className = "container">
+    return (
+        <section>
+            {/* Header */}
+            <div className="container">
+                <Header/>
+            </div>
+
+            {/* <div className = "container">
                 <div className="row">
                     <div className={isAuthenticated ? "col-sm-12" : "col-sm-7"}>
                         <Header/>
@@ -29,12 +32,18 @@ function Index() {
                 </div>
             </div> */}
 
-      {/* Body */}
-      <div className="container-flex">
-        <Body />
-      </div>
-    </section>
-  );
+            {/* Body */}
+            <div className="container-flex">
+                <Body/>
+            </div>
+
+        </section>      
+       
+    )
 }
 
 export default Index;
+
+
+
+
