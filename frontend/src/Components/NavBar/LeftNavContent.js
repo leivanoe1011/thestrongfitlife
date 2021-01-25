@@ -19,10 +19,10 @@ function LeftNav(){
             <>
                 
                 <li className="nav-item">
-                    <Link className="nav-link" to="/#features">MY STORY</Link>
+                    <Link className="nav-link" to="/features">MY STORY</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" to="/#contact">PROGRAMS</Link>
+                    <Link className="nav-link" to="/contact">PROGRAMS</Link>
                 </li>
 
     
