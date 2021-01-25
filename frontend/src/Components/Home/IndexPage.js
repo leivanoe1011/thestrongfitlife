@@ -35,7 +35,7 @@ function Index () {
             </div> */}
 
             {/* Body */}
-            <div className="container">
+            <div className="container-flex">
                 
                 <Body/>
 

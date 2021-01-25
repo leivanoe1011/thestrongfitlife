@@ -7,6 +7,7 @@ import LeftNav from "./LeftNavContent";
 import RightNav from "./RightNavContent"
 import MidNavContent from "./MidNavContent";
 
+
 function NavBar() {
 
     

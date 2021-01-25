@@ -1,99 +1,98 @@
-import React from "react";
-import makeToast from "../Toaster";
-import { withRouter } from "react-router-dom";
+import React, { useContext } from "react";
+// import React, { useState, useContext, useEffect } from "react";
 import AuthService from "../Services/AuthService";
+import makeToast from "../Toaster";
+import { AuthContext } from "../Context/AuthContext";
+import { withRouter } from "react-router-dom"
+
 
 const LoginPage = (props) => {
 
-  // Another way to update the state of a variable
   const emailRef = React.createRef();
   const passwordRef = React.createRef();
 
+  // Used to track the persistent autherication token
+  // Use Context will use the Auth Context file which contains the Autherization
+  // of the user
+  const authContext = useContext(AuthContext);
+  const { setUserId, setRole } = useContext(AuthContext);
+
+ 
   const loginUser = (e) => {
 
-    e.preventDefault();
-
-    // console.log(props);
+      e.preventDefault();
 
 
-    const user = {
-      email : emailRef.current.value,
-      password : passwordRef.current.value
-    }
+      const user = {
+          email : emailRef.current.value,
+          password : passwordRef.current.value
+      }
+
+      AuthService.login(user)
+      .then((response) => {
+
+          const { message, token, role, userId } = response;
+
+          makeToast("success", message);
+
+          // Here we load the Token to the Local Storage
+          // The App JS will get the Token
+          localStorage.setItem("CC_Token", token);
+
+          localStorage.setItem("CC_role", role);
+
+          setUserId(userId);
+
+          setRole(role);
+
+          // localStorage.setItem("User_Role", response.data.role);
+
+          // Call the setup Socket function from the APP.JS
+          // This will get the Token stored above in the Local Storage
+          authContext.setupSocket();
 
 
-    AuthService.login(user)
-    .then((response) => { 
+          // After user is logged in, we load the Dashboard page
+          // This is possible with the withRouter React Function at the end
+          props.history.push("/dashboard");
+      })
 
-      // The response contains the Success Message and Token from the 
-      // User Controller Login Function in the Back End
-      console.log("After logged In");
-      
-      
-      console.log(response.data);
-
-      makeToast("success", response.data.message);
-
-      // Here we load the Token to the Local Storage
-      // The App JS will get the Token
-      localStorage.setItem("CC_Token", response.data.token);
-
-      localStorage.setItem("CC_UserId", response.data.userId)
-
-      // localStorage.setItem("User_Role", response.data.role);
-
-      // After user is logged in, we load the Dashboard page
-      // This is possible with the withRouter React Function at the end
-      props.history.push("/dashboard");
+  }
 
 
-      // Call the setup Socket function from the APP.JS
-      // This will get the Token stored above in the Local Storage
-      props.setupSocket();
+  return( 
+      <div>
 
+          <form>
+              <div className="form-group">
+                  <label htmlFor="exampleInputEmail1">Email address</label>
+                  <input 
+                      type="email" 
+                      className="form-control" 
+                      id="exampleInputEmail1" 
+                      aria-describedby="emailHelp" 
+                      placeholder="Enter email" 
+                      ref={emailRef}/>
+                  <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
 
-    })
-    .catch((err) => {
-        // console.log(err);
-        if (
-          err &&
-          err.response &&
-          err.response.data &&
-          err.response.data.message
-        )
-          makeToast("error", err.response.data.message);
-    });
-     
-  };
+              <div className="form-group">
+                  <label htmlFor="exampleInputPassword1">Password</label>
+                  <input 
+                      type="password" 
+                      className="form-control" 
+                      id="exampleInputPassword1" 
+                      placeholder="Password" 
+                      ref={passwordRef}/>
+              </div>
 
-  return (
-    <div className="card">
-      <div className="cardHeader">Login</div>
-      <div className="cardBody">
-        <div className="inputGroup">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="abc@example.com"
-            ref={emailRef} //This will update the State of the Email Ref variable
-          />
-        </div>
-        <div className="inputGroup">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Your Password"
-            ref={passwordRef}
-          />
-        </div>
-        <button onClick={loginUser}>Login</button>
+              <button onClick={loginUser} type="submit" className="btn btn-primary">Submit</button>
+          </form>
+          
       </div>
-    </div>
+
   );
+
 };
 
 // You can get access to the history object's properties and 
