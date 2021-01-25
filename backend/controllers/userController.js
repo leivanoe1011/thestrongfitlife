@@ -96,7 +96,7 @@ exports.register = async (req, res) => {
     // The user ID is captured above
     const token = await jwt.sign(payload, process.env.SECRET);
   
-    // when we query the json object below
+    // when we query the json object below,
     // index 0 is the message
     // index 1 is the token
     // the token is comprised of the User Mongoose _Id
@@ -104,7 +104,8 @@ exports.register = async (req, res) => {
     res.json({
       message: "User logged in successfully!",
       token,
-      role : user.role
+      role : user.role,
+      userId: user._id,
     });
   };
   
