@@ -9,21 +9,32 @@ import DashboardPage from "../Components/Dashboard/DashboardPage";
 import CreateUserPage from "../Components/Chat/CreateUserPage";
 import ChatroomPage from "../Components/Chat/ChatPage";
 
-
-function Router(){
-    return(
-        <div>
-            <Switch>
-                <Route exact path="/" component={IndexPage}  />
-                <UnPrivateRoute exact path="/login" component={LoginPage}  />
-                <UnPrivateRoute exact path="/register" component={RegisterPage}  />
-                <PrivateRoute exact path="/dashboard" roles={["admin","user"]} component={DashboardPage}  />
-                <PrivateRoute exact path="/createuser" roles={["admin"]} component={CreateUserPage}  />
-                {/* The socket lives within the Auth Context */}
-                <PrivateRoute path="/chatroom/:id" roles={["admin","user"]} component={ChatroomPage}/> 
-            </Switch>
-        </div>
-    )
+function CustomRoutes() {
+  return (
+      <Switch>
+        <Route exact path="/" render={IndexPage} />
+        <UnPrivateRoute exact path="/login" component={LoginPage} />
+        <UnPrivateRoute exact path="/register" component={RegisterPage} />
+        <PrivateRoute
+          exact
+          path="/dashboard"
+          roles={["admin", "user"]}
+          component={DashboardPage}
+        />
+        <PrivateRoute
+          exact
+          path="/createuser"
+          roles={["admin"]}
+          component={CreateUserPage}
+        />
+        {/* The socket lives within the Auth Context */}
+        <PrivateRoute
+          path="/chatroom/:id"
+          roles={["admin", "user"]}
+          component={ChatroomPage}
+        />
+      </Switch>
+  );
 }
 
-export default Router;
+export default CustomRoutes;

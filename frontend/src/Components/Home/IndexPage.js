@@ -10,15 +10,13 @@ import { AuthContext } from "../../Context/AuthContext";
 
 function Index () {
 
-    const { isAuthenticated } = useContext(AuthContext);
+    // const { isAuthenticated } = useContext(AuthContext);
 
     return (
         <section>
             {/* Header */}
             <div className="container">
-
-                <Header/>                
-
+                <Header/>
             </div>
 
             {/* <div className = "container">
@@ -36,9 +34,7 @@ function Index () {
 
             {/* Body */}
             <div className="container-flex">
-                
                 <Body/>
-
             </div>
 
         </section>      
