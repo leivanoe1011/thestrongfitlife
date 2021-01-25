@@ -4,11 +4,10 @@ import "./style.css";
 
 function IndexBody() {
   return (
-    <div className="row mt-5">
+    <div className="row m-5">
       <div className="col-sm-12 col-md-5 col-lg-5 indexBodyImg">
         <img
-          height="600px"
-          width="600px"
+          className="img-fluid mb-5"
           src="https://images.squarespace-cdn.com/content/v1/5b98025012b13f43168a1e70/1597363424014-8AS4ARI86TZ9XP52SM8I/ke17ZwdGBToddI8pDm48kGvsJSkuKZO7eYMV5YzgTfR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbFeHJVR-930yo_tzqAvXUZKtiZdkHQUXLVHXpO2mG3ELqRYSQk6N9OYbVZu2wcCwA/vanessa-welcome.jpg?format=750w"
         />
       </div>
@@ -17,9 +16,7 @@ function IndexBody() {
         <div className="image-card sqs-dynamic-text-container">
           <div className="image-title-wrapper">
             <div
-              className="image-title sqs-dynamic-text p1"
-              // data-animation-override=""
-              // data-width-percentage="56.8"
+              className="image-title p1"
             >
               <p className="">Hey There! I’m Vanessa,,</p>
               <p className="">Beastmode Personal Trainer &amp; Health Coach.</p>
