@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
 // import React, { useState, useContext, useEffect } from "react";
-import AuthService from "../../Services/AuthService";
+import AuthService from "../Services/AuthService";
 import makeToast from "../../Toaster";
 import { AuthContext } from "../../Context/AuthContext";
 import { withRouter } from "react-router-dom"
