@@ -16,8 +16,8 @@ function IndexBody() {
         <div>
           <div>
             <div className="helloTitle">
-              <p className="p1">Hey There! I’m Vanessa,,</p>
-              <p className="p1">Beastmode Personal Trainer & Health Coach.</p>
+              <h2>Hey There! I’m Vanessa,,</h2>
+              <h2>Beastmode Personal Trainer & Health Coach.</h2>
             </div>
           </div>
 
