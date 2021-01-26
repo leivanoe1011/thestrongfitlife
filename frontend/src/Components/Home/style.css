@@ -31,34 +31,41 @@
   background-size: cover;
 }
 
-.headerCon{
+.headerCon {
   position: relative;
   left: 60px;
   top: 150px;
   z-index: 2;
 }
 
-.bodyCon{
+.bodyCon {
   position: relative;
   top: 60px;
   right: 60px;
   z-index: 2;
 }
 
-.helloTitle{
+.helloTitle {
   line-height: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-  .headerCon{
+  .headerCon {
     left: 0px;
-    top: 20px
+    top: 20px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
-  .headerCon{
+  .headerCon {
     left: 0px;
-    top: 20px
+    top: 20px;
+  }
+
+  .bodyCon {
+    top: 0px;
+    right: 40px;
+    line-height: 20px;
+    margin-bottom: 20px;
   }
 }
