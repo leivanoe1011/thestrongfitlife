@@ -1,43 +1,53 @@
-
-.indexBodyImg{
-    z-index: 1;
-    color: white !important;
+.indexBodyImg {
+  z-index: 1;
+  color: white !important;
 }
 
-.p1{
-    font-size: 110%;
-    background-color: white !important;
-    z-index: -2;
+.p1 {
+  font-size: 110%;
+  background-color: white !important;
+  z-index: -2;
 }
 
-
-.p2{
-    font-size: 80%;
-    background-color: white !important;
+.p2 {
+  font-size: 80%;
+  background-color: white !important;
 }
 
-.myStory{
-    font-size: 80%;
-    /* background-color: white !important; */
+.myStory {
+  font-size: 80%;
+  /* background-color: white !important; */
 }
 
 .parallax {
-    /* The image used */
-    background-image: url("./Images/gymphoto1.jpg");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  /* The image used */
+  background-image: url("./Images/gymphoto1.jpg");
+  /* Full height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerCon{
+  position: relative;
+  left: 60px;
+  top: 150px;
+  z-index: 2;
+}
+
+.bodyCon{
+  position: relative;
+  top: 60px;
+  right: 60px;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 600px) {
+  .headerCon{
+    left: 0px;
+    top: 20px
   }
-
-
-
-
-
-
-
+}
