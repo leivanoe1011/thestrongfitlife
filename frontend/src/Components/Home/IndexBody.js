@@ -52,13 +52,14 @@ function IndexBody() {
               firsthand.
             </p>
           </div>
-
-          <div className=" myStory">
-            <div className="image-button-inner">
-              {/* <a href="/about">My Story</a> */}
-              <button type="button" class="btn btn-primary">
-                My Story
-              </button>
+          <div className="row">
+            <div className="container myStory">
+              <div className="col-sm-3 col-md-3 col-lg-3">
+                {/* <a href="/about">My Story</a> */}
+                <button type="button" class="btn btn-danger">
+                  My Story
+                </button>
+              </div>
             </div>
           </div>
         </div>
