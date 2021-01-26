@@ -13,11 +13,11 @@ function IndexBody() {
       </div>
 
       <div className="col-sm-12 col-md-6 col-lg-6 bodyCon">
-        <div className="">
-          <div className="">
-            <div className="p1">
-              <p>Hey There! I’m Vanessa,,</p>
-              <p>Beastmode Personal Trainer & Health Coach.</p>
+        <div>
+          <div>
+            <div className="helloTitle">
+              <p className="p1">Hey There! I’m Vanessa,,</p>
+              <p className="p1">Beastmode Personal Trainer & Health Coach.</p>
             </div>
           </div>
 
