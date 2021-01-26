@@ -8,9 +8,9 @@ import MidNavContent from "./MidNavContent";
 function NavBar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         
-        <Link className="nav-link" to="/">
+        <Link className="nav-link text-light" to="/">
           Home
         </Link>
 
