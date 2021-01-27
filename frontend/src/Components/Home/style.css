@@ -49,10 +49,24 @@
   line-height: 30px;
 }
 
-.helloTitle h2{
+.helloTitle h2 {
   padding: 10px;
   background-color: white;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerCon {
+    left: 0px;
+    top: 20px;
+  }
+
+  .bodyCon {
+    top: 10px;
+    right: 40px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -60,18 +74,9 @@
     left: 0px;
     top: 20px;
   }
-}
-
-@media only screen and (max-width: 1199px) {
-  .headerCon {
-    left: 0px;
-    top: 20px;
-  }
 
   .bodyCon {
     top: 0px;
-    right: 40px;
-    line-height: 20px;
-    margin-bottom: 20px;
+    right: 0px;
   }
 }

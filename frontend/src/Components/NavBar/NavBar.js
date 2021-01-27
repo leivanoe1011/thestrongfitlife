@@ -5,13 +5,19 @@ import LeftNav from "./LeftNavContent";
 import RightNav from "./RightNavContent";
 import MidNavContent from "./MidNavContent";
 
+import Logo from "../../images/StrongLifeLogo.png"
+
 function NavBar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         
-        <Link className="nav-link" to="/">
+        <Link className="nav-link text-light deskHome" to="/">
           Home
+        </Link>
+
+        <Link className="mobileBrand" to="/">
+          <img height="50px" width="50px" src={Logo}></img>
         </Link>
 
         <button
