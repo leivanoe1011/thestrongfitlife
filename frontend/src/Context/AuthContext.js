@@ -16,8 +16,6 @@ export default ({children}) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [role, setRole] = useState("");
 
-
-
     // Once the user is logged in, then they go to the Local Storage 
     // And grab the Token
     // This Function is executed when the Setup Socket function is returned
