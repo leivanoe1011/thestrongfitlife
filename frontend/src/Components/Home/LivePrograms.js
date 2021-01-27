@@ -17,7 +17,6 @@ function LivePrograms() {
 
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="card bg-dark text-white liveImg">
-            <h5 className="card-title text-light">Card title</h5>
             <img
               src={weight}
               className="img-fluid"
@@ -35,7 +34,6 @@ function LivePrograms() {
 
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="card bg-dark text-white liveImg">
-            <h5 className="card-title text-light">Card title</h5>
             <img
               src={iphone}
               className="img-fluid"
@@ -53,7 +51,6 @@ function LivePrograms() {
 
         <div className="col-sm-12 col-md-4 col-lg-4">
           <div className="card bg-dark text-white liveImg">
-            <h5 className="card-title text-light">Card title</h5>
             <img
               src={pushup}
               className="img-fluid"
