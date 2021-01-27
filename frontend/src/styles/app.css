@@ -1,3 +1,7 @@
+.mobileBrand{
+  visibility: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -79,5 +83,13 @@
   .bookCall {
     width: 50%;
     margin-top: 10px;
+  }
+
+  .mobileBrand{
+    visibility: visible;
+  }
+
+  .deskHome{
+    visibility: hidden;
   }
 }
