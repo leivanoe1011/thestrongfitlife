@@ -43,14 +43,13 @@
 .bookCall {
   transition-duration: 0.4s;
   padding: 5px;
-  margin: 0 10px 0 5px;
 }
 
 .bookCall:hover {
   background-color: #3623dd; /* Green */
   color: white;
-  padding: 10px;
-  margin: 0 10px 0 10px;
+  padding: 5px;
+  float: right;
 }
 
 .card-body {
