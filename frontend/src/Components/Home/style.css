@@ -21,7 +21,7 @@
 
 .parallax {
   /* The image used */
-  background-image: url("./Images/gymphoto1.jpg");
+  background-image: url("../../images/gymphoto1.jpg");
   /* Full height */
   height: 100%;
   /* Create the parallax scrolling effect */
