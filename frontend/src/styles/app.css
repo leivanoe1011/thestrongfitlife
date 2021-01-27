@@ -1,4 +1,4 @@
-.mobileBrand{
+.mobileBrand {
   visibility: hidden;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .bookCall:hover {
-  background-color: #3623dd; /* Green */
+  background-color: #3623dd;
   color: white;
   padding: 5px;
   float: right;
@@ -84,11 +84,11 @@
     margin-top: 10px;
   }
 
-  .mobileBrand{
+  .mobileBrand {
     visibility: visible;
   }
 
-  .deskHome{
+  .deskHome {
     visibility: hidden;
   }
 }

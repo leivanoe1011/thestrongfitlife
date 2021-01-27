@@ -12,9 +12,7 @@ function App() {
     <Router>
       {/* The Link components in the NavBar must live within the Router component */}
       <NavBar />
-      <MainBody>
         <CustomRoutes />
-      </MainBody>
       <Footer />
     </Router>
   );

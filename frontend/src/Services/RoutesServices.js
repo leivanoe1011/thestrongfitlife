@@ -2,17 +2,17 @@ import { Switch, Route } from "react-router-dom";
 
 import PrivateRoute from "../hoc/PrivateRoute";
 import UnPrivateRoute from "../hoc/UnPrivateRoute";
-import IndexPage from "../Components/Home/IndexPage";
 import LoginPage from "../Components/LoginPage";
 import RegisterPage from "../Components/CreateUser/RegisterPage";
 import DashboardPage from "../Components/Dashboard/DashboardPage";
 import CreateUserPage from "../Components/Chat/CreateUserPage";
 import ChatroomPage from "../Components/Chat/ChatPage";
+import MainBody from "../Components/Home/MainBody";
 
 function CustomRoutes() {
   return (
       <Switch>
-        <Route exact path="/" render={IndexPage} />
+        <Route exact path="/" render={MainBody} />
         <UnPrivateRoute exact path="/login" component={LoginPage} />
         <UnPrivateRoute exact path="/register" component={RegisterPage} />
         <PrivateRoute
