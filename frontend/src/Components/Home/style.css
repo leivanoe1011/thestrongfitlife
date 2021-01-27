@@ -55,6 +55,28 @@
   font-weight: bold;
 }
 
+.questionsCon h4{
+  font-weight: bold;
+  font-style: italic;
+  color: blue;
+}
+
+.questionsCon h1{
+  font-weight: bold;
+  font-style: italic;
+  color: salmon;
+}
+
+.questionsCon a{
+  font-weight: bold;
+  color: white;
+  background-color: salmon;
+}
+
+.questionsCon p{
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1200px) {
   .headerCon {
     left: 0px;

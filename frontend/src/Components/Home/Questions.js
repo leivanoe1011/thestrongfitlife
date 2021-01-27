@@ -2,14 +2,14 @@ import React from "react";
 
 function Questions() {
   return (
-    <div className="row">
-      <div className="container questionsCon">
-        <div className="col-sm-12 col-md-12 col-lg-12">
-          <h4>
+    <div className="container">
+      <div className="row">
+        <div className="col-sm-12 col-md-12 col-lg-12 text-center mb-2 mt-2  questionsCon">
+          <h1>
             Have your attempts to workout from home during the pandemic caused
             you to lose your mojo? Do you feel isolated with no real plan of
             attack?
-          </h4>
+          </h1>
           <p>
             I’ve got good news — You don’t have to head back to the gym to
             achieve badass-level fitness.
@@ -34,9 +34,7 @@ function Questions() {
             All that’s required? A beast-like attitude, a few pieces of
             equipment, and 40 minutes a day.
           </h4>
-          <a className="btn btn-large bg-success">
-            Snag a free workout session
-          </a>
+          <a className="btn btn-large">SNAG A FREE WORKOUT SESSION</a>
         </div>
       </div>
     </div>
