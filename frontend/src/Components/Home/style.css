@@ -38,7 +38,7 @@
   z-index: 2;
 }
 
-.helloSec{
+.helloSec {
   margin-top: 100px;
 }
 
@@ -54,6 +54,10 @@
   padding: 10px;
   background-color: white;
   font-weight: bold;
+}
+
+.questionSec {
+  background-color: #f2f2f2;
 }
 
 .questionsCon h4 {

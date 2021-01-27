@@ -9,7 +9,7 @@ function Index() {
   // const { isAuthenticated } = useContext(AuthContext);
 
   return (
-    <section>
+    <>
       {/* Header */}
       <Header />
 
@@ -27,8 +27,7 @@ function Index() {
             </div> */}
 
       {/* Body */}
-
-    </section>
+    </>
   );
 }
 
