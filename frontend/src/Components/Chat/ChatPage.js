@@ -133,7 +133,7 @@ function Chat (props) {
                       }
                     >
                       {message.name}:
-                    </span>{" "}
+                    </span>
                     {message.message}
                   </div>
                 ))

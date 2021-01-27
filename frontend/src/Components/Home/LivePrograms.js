@@ -21,7 +21,7 @@ function LivePrograms() {
               src={weight}
               className="img-fluid"
               alt="weight on person's back"
-            ></img>{" "}
+            ></img>
             <div class="card-img-overlay">
               <h5 className="card-title text-light">Card title</h5>
               <p className="card-text">

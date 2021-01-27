@@ -4,10 +4,11 @@ import "./style.css";
 
 function IndexBody() {
   return (
-    <div className="row mr-5 mt-5 ml-5">
+    <div className="row mr-5 ml-5" style={{marginTop: "-25px"}}>
       <div className="col-sm-12 col-md-5 col-lg-5 indexBodyImg">
         <img
-          className="img-fluid mb-5"
+          className="img-fluid mb-5 rounded"
+          alt=""
           src="https://images.squarespace-cdn.com/content/v1/5b98025012b13f43168a1e70/1597363424014-8AS4ARI86TZ9XP52SM8I/ke17ZwdGBToddI8pDm48kGvsJSkuKZO7eYMV5YzgTfR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UbFeHJVR-930yo_tzqAvXUZKtiZdkHQUXLVHXpO2mG3ELqRYSQk6N9OYbVZu2wcCwA/vanessa-welcome.jpg?format=750w"
         />
       </div>
@@ -56,7 +57,7 @@ function IndexBody() {
             <div className="container">
               <div className="col-sm-6 col-md-6 col-lg-6">
                 {/* <a href="/about">My Story</a> */}
-                <a  className="btn btn-lg btn-danger">
+                <a  className="btn btn-lg btn-danger" href="/">
                   My Story
                 </a>
               </div>
