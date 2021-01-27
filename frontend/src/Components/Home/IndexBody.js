@@ -4,7 +4,7 @@ import "./style.css";
 
 function IndexBody() {
   return (
-    <div className="row m-5">
+    <div className="row mr-5 mt-5 ml-5">
       <div className="col-sm-12 col-md-5 col-lg-5 indexBodyImg">
         <img
           className="img-fluid mb-5"
