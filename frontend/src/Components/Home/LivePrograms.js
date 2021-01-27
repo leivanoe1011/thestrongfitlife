@@ -15,34 +15,58 @@ function LivePrograms() {
           </h2>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
-          <div className="card bg-dark text-white">
+        <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="card bg-dark text-white liveImg">
+            <h5 className="card-title text-light">Card title</h5>
             <img
               src={weight}
               className="img-fluid"
               alt="weight on person's back"
             ></img>
-            <div className="card-img-overlay">
-              <h5 className="card-title text-light">Card title</h5>
-              <p className="card-text">
+            <div className="card-img">
+              <p className="card-body text-light">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
-              <p className="card-text">Last updated 3 mins ago</p>
             </div>
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
-          <img
-            src={iphone}
-            className="img-fluid"
-            alt="person holding iphone"
-          ></img>
+        <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="card bg-dark text-white liveImg">
+            <h5 className="card-title text-light">Card title</h5>
+            <img
+              src={iphone}
+              className="img-fluid"
+              alt="weight on person's back"
+            ></img>
+            <div className="card-img">
+              <p className="card-body text-light">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
-          <img src={pushup} className="img-fluid" alt="people exercising"></img>
+
+        <div className="col-sm-12 col-md-4 col-lg-4">
+          <div className="card bg-dark text-white liveImg">
+            <h5 className="card-title text-light">Card title</h5>
+            <img
+              src={pushup}
+              className="img-fluid"
+              alt="weight on person's back"
+            ></img>
+            <div className="card-img">
+              <p className="card-body text-light">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

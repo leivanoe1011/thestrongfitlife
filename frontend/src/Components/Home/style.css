@@ -83,6 +83,10 @@
   font-weight: bold;
 }
 
+.liveImg{
+  width: 360px;
+}
+
 @media only screen and (max-width: 1200px) {
   .headerCon {
     left: 0px;
@@ -101,6 +105,11 @@
   .headerCon {
     left: 0px;
     top: -20px;
+  }
+
+  .liveImg{
+    width: 350px;
+    margin-top: 10px;
   }
 
   .headImg{

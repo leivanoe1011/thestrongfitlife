@@ -19,35 +19,6 @@ body {
   overflow-x: hidden;
 }
 
-.card {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 4px;
-  padding: 1rem;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  width: 25vw;
-  transform: translate(-50%, -50%);
-}
-
-.cardHeader {
-  background: #f7c52a;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2px;
-  text-transform: uppercase;
-  transform: skewY(-4deg);
-  font-size: 1.1rem;
-  font-weight: bold;
-  display: inline-block;
-  position: absolute;
-  top: -1rem;
-  left: -0.75rem;
-}
-
-.cardBody {
-  margin-top: 2rem;
-}
-
 .inputGroup {
   margin-bottom: 1rem;
 }
@@ -70,7 +41,6 @@ input:focus {
 }
 
 button {
-  background: #f7c52a;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 2px;

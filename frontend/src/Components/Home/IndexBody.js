@@ -57,7 +57,7 @@ function IndexBody() {
               <div className="container">
                 <div className="col-sm-6 col-md-6 col-lg-6">
                   {/* <a href="/about">My Story</a> */}
-                  <a className="btn btn-lg btn-danger" href="/">
+                  <a className="btn btn-lg text-light" href="/" style={{backgroundColor: "salmon"}}>
                     My Story
                   </a>
                 </div>

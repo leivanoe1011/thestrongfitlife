@@ -41,23 +41,16 @@
 }
 
 .bookCall {
+  background-color: salmon;
   transition-duration: 0.4s;
   padding: 5px;
 }
 
 .bookCall:hover {
-  background-color: #3623dd;
+  background-color: cyan;
   color: white;
   padding: 5px;
   float: right;
-}
-
-.card-body {
-  color: white !important;
-}
-
-.card-text {
-  color: white !important;
 }
 
 .snagHomeGymCard {
