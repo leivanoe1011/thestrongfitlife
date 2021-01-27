@@ -21,7 +21,7 @@ function IndexBody() {
             </div>
           </div>
 
-          <div className="p1">
+          <div className="helloSec">
             <p>
               I’m a Malbec-sippin’ mama on a mission to help you achieve a
               fitness level you didn’t think was possible.
@@ -56,7 +56,7 @@ function IndexBody() {
             <div className="container">
               <div className="col-sm-6 col-md-6 col-lg-6">
                 {/* <a href="/about">My Story</a> */}
-                <a  className="btn-lg btn-danger">
+                <a  className="btn btn-lg btn-danger">
                   My Story
                 </a>
               </div>
