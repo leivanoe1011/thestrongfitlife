@@ -29,15 +29,15 @@
 }
 
 .navbar-toggler {
-  width: 10%;
+  width: 20%;
 }
 
-.navbar-nav{
-  font-size : 12px;
+.navbar-nav {
+  font-size: 12px;
 }
 
-.bookCall{
-  transition-duration : 0.4s;
+.bookCall {
+  transition-duration: 0.4s;
   padding: 5px;
   margin: 0 10px 0 10px;
 }
@@ -49,21 +49,21 @@
   margin: 0 10px 0 10px;
 }
 
-.card-body{
+.card-body {
   color: white !important;
 }
 
-.card-text{
+.card-text {
   color: white !important;
 }
 
-.snagHomeGymCard{
+.snagHomeGymCard {
   background-color: black !important;
 }
 
-.snagHomeGym{
+.snagHomeGym {
   background-color: black !important;
-  color:white;
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -72,5 +72,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bookCall {
+    width: 50%;
+    margin-top: 10px;
   }
 }
