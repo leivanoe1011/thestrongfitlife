@@ -23,7 +23,7 @@
   /* The image used */
   background-image: url("../../images/gymphoto1.jpg");
   /* Full height */
-  height: 100%;
+  height: 80vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
