@@ -82,11 +82,6 @@
   font-weight: bold;
 }
 
-.liveImg {
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-}
-
 @media only screen and (max-width: 1200px) {
   .headerCon {
     left: 0px;

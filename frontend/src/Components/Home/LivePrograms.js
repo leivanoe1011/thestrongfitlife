@@ -14,11 +14,32 @@ function LivePrograms() {
             programs: Unleash the Beast or 1:1 Personal Training.
           </h2>
         </div>
+
         <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
-          <img src={weight} className="img-fluid" alt="weight on person's back"></img>
+          <div className="card bg-dark text-white">
+            <img
+              src={weight}
+              className="img-fluid"
+              alt="weight on person's back"
+            ></img>{" "}
+            <div class="card-img-overlay">
+              <h5 className="card-title text-light">Card title</h5>
+              <p className="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p className="card-text">Last updated 3 mins ago</p>
+            </div>
+          </div>
         </div>
+
         <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
-          <img src={iphone} className="img-fluid" alt="person holding iphone"></img>
+          <img
+            src={iphone}
+            className="img-fluid"
+            alt="person holding iphone"
+          ></img>
         </div>
         <div className="col-sm-12 col-md-4 col-lg-4 liveImg">
           <img src={pushup} className="img-fluid" alt="people exercising"></img>
