@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 
 import Header from "./IndexHeader";
 // import Login from "./IndexLogin";
-import Body from "./IndexBody";
 
 import { AuthContext } from "../../Context/AuthContext";
 
@@ -29,7 +28,6 @@ function Index() {
 
       {/* Body */}
 
-      <Body />
     </section>
   );
 }

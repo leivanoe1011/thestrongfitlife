@@ -38,15 +38,16 @@
   z-index: 2;
 }
 
-.bodyCon {
-  position: relative;
-  top: 60px;
-  right: 60px;
-  z-index: 2;
+.helloSec{
+  margin-top: 100px;
 }
 
 .helloTitle {
   line-height: 30px;
+  position: relative;
+  top: 60px;
+  right: 60px;
+  z-index: 2;
 }
 
 .helloTitle h2 {
@@ -55,25 +56,25 @@
   font-weight: bold;
 }
 
-.questionsCon h4{
+.questionsCon h4 {
   font-weight: bold;
   font-style: italic;
   color: blue;
 }
 
-.questionsCon h1{
+.questionsCon h1 {
   font-weight: bold;
   font-style: italic;
   color: salmon;
 }
 
-.questionsCon a{
+.questionsCon a {
   font-weight: bold;
   color: white;
   background-color: salmon;
 }
 
-.questionsCon p{
+.questionsCon p {
   font-weight: bold;
 }
 
@@ -83,7 +84,7 @@
     top: 20px;
   }
 
-  .bodyCon {
+  .helloTitle {
     top: 10px;
     right: 40px;
     line-height: 20px;
@@ -97,7 +98,7 @@
     top: 20px;
   }
 
-  .bodyCon {
+  .helloTitle {
     top: -60px;
     right: 10px;
   }

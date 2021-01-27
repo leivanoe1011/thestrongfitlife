@@ -21,7 +21,7 @@ function IndexBody() {
             </div>
           </div>
 
-          <div className="p1">
+          <div className="helloSec">
             <p>
               I’m a Malbec-sippin’ mama on a mission to help you achieve a
               fitness level you didn’t think was possible.
