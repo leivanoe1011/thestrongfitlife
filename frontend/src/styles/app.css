@@ -43,7 +43,7 @@
 .bookCall {
   transition-duration: 0.4s;
   padding: 5px;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 0 5px;
 }
 
 .bookCall:hover {
