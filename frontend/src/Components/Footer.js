@@ -1,18 +1,21 @@
 import React from "react";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function Footer() {
   return (
     <div className="footer" style={{ backgroundColor: "black" }}>
-      <div className="container mt-4">
-        <div className="row">
+      <Container className="mt-4">
+        <Row>
           <h4 className="text-light">Socials</h4>
-          <div className="col-lg-6 col-md-6 col-sm-12">
+          <Col sm={12} md={6} lg={6}>
             <p className="text-light">Twitter</p>
             <p className="text-light">Instagram</p>
             <p className="text-light">Facebook</p>
-          </div>
-        </div>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
