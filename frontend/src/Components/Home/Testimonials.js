@@ -26,9 +26,9 @@ function Testimonials() {
                   combination of exercises and inspired how Vanessa returned
                   back right after having baby :) Vanessa you are awesome ! I
                   love your virtual classes, working out with you and our weekly
-                  calls. I love having energy throughout the day. -Radhika
-                  Kulkarni
+                  calls. I love having energy throughout the day. Kulkarni
                 </p>
+                <h3> -Radhika</h3>
               </Carousel.Item>
               <Carousel.Item className="carousel-item text-center p-4">
                 <h3>I love how Vanessa can make workouts fun.</h3>
@@ -39,8 +39,9 @@ function Testimonials() {
                   workout being short with such a big impact on my body. The
                   length of workouts and Vanessa’s energy. Toned muscles, weight
                   loss, variety, excitement. Vanessa truly cares. This is a
-                  passion and so much more to her than a job. - Toni A
+                  passion and so much more to her than a job.
                 </p>
+                <h3> - Toni A</h3>
               </Carousel.Item>
               <Carousel.Item className="carousel-item text-center p-4">
                 <h3>I work in the medical field as a vascular</h3>
@@ -53,8 +54,9 @@ function Testimonials() {
                   muscles I’ve never had. I have enjoyed working with you. I
                   look forward to our weekly check-ins. It’s great knowing i
                   have your support. I feel better about myself than I have in
-                  20 years. -Amy O
+                  20 years.
                 </p>
+                <h3>-Amy O</h3>
               </Carousel.Item>
             </Carousel>
           </Col>
