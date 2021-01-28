@@ -24,7 +24,7 @@ function NavBar() {
         </Link>
 
         <Link className="mobileBrand" to="/">
-          <img height="50px" width="50px" src={MobileLogo}></img>
+          <img height="50px" width="50px" src={MobileLogo} alt="mobile logo"></img>
         </Link>
 
         <button
