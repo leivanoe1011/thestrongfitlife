@@ -35,7 +35,7 @@ function Questions() {
               All that’s required? A beast-like attitude, a few pieces of
               equipment, and 40 minutes a day.
             </h4>
-            <a className="btn btn-large">SNAG A FREE WORKOUT SESSION</a>
+            <a className="btn btn-large" href="/freesession">SNAG A FREE WORKOUT SESSION</a>
           </div>
         </div>
       </div>
