@@ -15,7 +15,7 @@ function LivePrograms() {
           </h2>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4">
           <div className="card bg-dark text-white liveImg">
             <img
               src={weight}
@@ -32,7 +32,7 @@ function LivePrograms() {
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
           <div className="card bg-dark text-white liveImg">
             <img
               src={iphone}
@@ -49,7 +49,7 @@ function LivePrograms() {
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
           <div className="card bg-dark text-white liveImg">
             <img
               src={pushup}
