@@ -7,6 +7,7 @@ import Header from "./IndexHeader";
 // import Login from "./IndexLogin";
 
 import { AuthContext } from "../../Context/AuthContext";
+import Testimonials from "./Testimonials";
 // const { isAuthenticated } = useContext(AuthContext);
 
 function MainBody(props) {
@@ -30,6 +31,7 @@ function MainBody(props) {
       <Body />
       <Questions />
       <LivePrograms />
+      <Testimonials />
     </>
   );
 }

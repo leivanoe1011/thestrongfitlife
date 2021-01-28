@@ -51,6 +51,12 @@
   z-index: 2;
 }
 
+.carousel-item.active {
+  display: block;
+}
+
+
+
 .helloTitle h2 {
   padding: 10px;
   background-color: white;
@@ -83,7 +89,7 @@
   font-weight: bold;
 }
 
-.liveImg{
+.liveImg {
   width: 360px;
 }
 
@@ -107,17 +113,17 @@
     top: -20px;
   }
 
-  .liveImg{
+  .liveImg {
     width: 350px;
     margin-top: 10px;
   }
 
-  .headImg{
+  .headImg {
     position: relative;
     top: -60px;
   }
 
-  .parallax{
+  .parallax {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 

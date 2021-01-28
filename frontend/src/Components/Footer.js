@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="footer bg-dark">
+    <div className="footer" style={{ backgroundColor: "black" }}>
       <div className="container mt-4">
         <div className="row">
           <h4 className="text-light">Socials</h4>

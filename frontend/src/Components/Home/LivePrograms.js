@@ -15,53 +15,66 @@ function LivePrograms() {
           </h2>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
           <div className="card bg-dark text-white liveImg">
             <img
               src={weight}
               className="img-fluid"
               alt="weight on person's back"
             ></img>
-            <div className="card-img">
+            <div className="card-img text-center">
+              <h4 className="text-light mt-2">Unleash The Beast</h4>
               <p className="card-body text-light">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Fitness Membership with Live Workouts, Support, and
+                Accountability.
               </p>
+              <div className="mb-2">
+                <a className="btn btn-large bg-light" href="/">
+                  TELL ME MORE!
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
           <div className="card bg-dark text-white liveImg">
             <img
               src={iphone}
               className="img-fluid"
               alt="weight on person's back"
             ></img>
-            <div className="card-img">
+            <div className="card-img text-center">
+              <h4 className="text-light mt-2">Personal Training</h4>
               <p className="card-body text-light">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                1:1 Personalized Online Fitness Coaching.
               </p>
+              <div className="mb-2">
+                <a className="btn btn-large bg-light" href="/">
+                  I WANT INFO!
+                </a>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="col-sm-12 col-md-4 col-lg-4">
+        <div className="col-sm-12 col-md-12 col-lg-4 mt-3">
           <div className="card bg-dark text-white liveImg">
             <img
               src={pushup}
               className="img-fluid"
               alt="weight on person's back"
             ></img>
-            <div className="card-img">
+            <div className="card-img text-center">
+              <h4 className="text-light mt-2">Testimonials</h4>
               <p className="card-body text-light">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Real Transformation Stories from The Beastmode Community
               </p>
+              <div className="mb-2">
+                <a className="btn btn-large bg-light" href="/">
+                  BRING ME THERE!
+                </a>
+              </div>
             </div>
           </div>
         </div>
