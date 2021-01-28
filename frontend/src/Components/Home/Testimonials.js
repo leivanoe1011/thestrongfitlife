@@ -10,7 +10,7 @@ function Testimonials() {
       <Container>
         <Row>
           <Col className="col-sm-12 col-md-12 col-lg-12 text-center">
-            <h1>LOVE NOTES</h1>
+            <h1 className="mt-3" style={{ color: "salmon" }}>LOVE NOTES</h1>
           </Col>
         </Row>
         <Row>
