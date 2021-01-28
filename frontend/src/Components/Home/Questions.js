@@ -1,11 +1,19 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 
 function Questions() {
   return (
     <div className="questionSec">
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-12 col-md-12 col-lg-12 text-center mb-2 mt-2  questionsCon">
+      <Container>
+        <Row>
+          <Col
+            sm={12}
+            md={12}
+            lg={12}
+            className="text-center mb-2 mt-2 questionsCon"
+          >
             <h1>
               Have your attempts to workout from home during the pandemic caused
               you to lose your mojo? Do you feel isolated with no real plan of
@@ -35,10 +43,12 @@ function Questions() {
               All that’s required? A beast-like attitude, a few pieces of
               equipment, and 40 minutes a day.
             </h4>
-            <a className="btn btn-large" href="/freesession">SNAG A FREE WORKOUT SESSION</a>
-          </div>
-        </div>
-      </div>
+            <a className="btn btn-large" href="/freesession">
+              SNAG A FREE WORKOUT SESSION
+            </a>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
