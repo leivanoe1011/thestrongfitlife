@@ -13,7 +13,7 @@ function NavBar() {
     <>
       <nav
         className="navbar navbar-expand-lg navbar-dark sticky-top"
-        style={{ backgroundColor: "black" }}
+        style={{ backgroundColor: "black", height: "120px" }}
       >
         <Link className="navbar-brand" to="/">
           <img
