@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../images/StrongLifeLogo.png";
+import Logo from "../../images/StrongLifeLogo.png";
 
 import LeftNav from "./LeftNavContent";
 import RightNav from "./RightNavContent";
-import MidNavContent from "./MidNavContent";
 
-import Logo from "../../images/StrongLifeLogo.png";
+import MobileLogo from "../../images/StrongLifeLogo.png";
 
 function NavBar() {
   return (
@@ -19,13 +18,13 @@ function NavBar() {
           <img
             style={{ width: 125 }}
             className="d-none d-lg-block"
-            src={logo}
+            src={Logo}
             alt="Strong fit life logo"
           />
         </Link>
 
         <Link className="mobileBrand" to="/">
-          <img height="50px" width="50px" src={Logo}></img>
+          <img height="50px" width="50px" src={MobileLogo}></img>
         </Link>
 
         <button
@@ -48,8 +47,6 @@ function NavBar() {
           <ul className="navbar-nav">
             <LeftNav />
           </ul>
-
-          <MidNavContent />
 
           <ul className="navbar-nav">
             <RightNav />
