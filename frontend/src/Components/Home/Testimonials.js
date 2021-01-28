@@ -15,7 +15,7 @@ function Testimonials() {
         </Row>
         <Row>
           <Col>
-            <Carousel>
+            <Carousel controls={false}>
               <Carousel.Item className="carousel-item text-center p-4">
                 <h3>Both mental and physical health are very important</h3>
                 <p>
