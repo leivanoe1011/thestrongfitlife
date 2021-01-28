@@ -51,8 +51,6 @@
   z-index: 2;
 }
 
-
-
 .helloTitle h2 {
   padding: 10px;
   background-color: white;
@@ -86,13 +84,17 @@
 }
 
 .liveImg {
-  width: 360px;
+  height: 500px;
 }
 
 @media only screen and (max-width: 1200px) {
   .headerCon {
     left: 0px;
     top: 20px;
+  }
+
+  .liveImg {
+    height: 700px;
   }
 
   .helloTitle {
@@ -110,9 +112,10 @@
   }
 
   .liveImg {
-    width: 350px;
     margin-top: 10px;
+    height: 450px;
   }
+  
 
   .headImg {
     position: relative;
