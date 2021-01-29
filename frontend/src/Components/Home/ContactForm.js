@@ -22,16 +22,16 @@ function ContactForm() {
           </Col>
           <Form className="mt-2">
             <Form.Row>
-              <Col>
+              <Col  sm={12} md={12} lg={3}>
                 <Form.Control size="lg" placeholder="First name" />
               </Col>
-              <Col>
+              <Col  sm={12} md={12} lg={3}>
                 <Form.Control size="lg" placeholder="Last name" />
               </Col>
-              <Col>
+              <Col  sm={12} md={12} lg={3}>
                 <Form.Control size="lg" type="email" placeholder="Email" />
               </Col>
-              <Col>
+              <Col  sm={12} md={12} lg={3}>
                 <Button
                   type="submit"
                   size="lg"
