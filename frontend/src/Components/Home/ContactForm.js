@@ -7,10 +7,20 @@ import Button from "react-bootstrap/Button";
 
 function ContactForm() {
   return (
-    <div style={{ backgroundColor: "cyan", height: "200px" }}>
+    <div style={{ backgroundColor: "#00cccc", minHeight: "200px" }}>
       <Container>
-        <Row className="justify-content-center">
-          <Form className="mt-5">
+        <Row className="justify-content-center text-center">
+          <Col>
+            <h1 className="mb-5 mt-5 text-primary">
+              Ready to experience the power of #beastmode without having to
+              leave the house?
+            </h1>
+            <h3 className="mb-5 text-white">
+              Snag my Home Gym Made Easy Guide, plus get a FREE week of
+              Beastmode Burst Workouts.
+            </h3>
+          </Col>
+          <Form className="mt-2">
             <Form.Row>
               <Col>
                 <Form.Control size="lg" placeholder="First name" />
@@ -33,6 +43,11 @@ function ContactForm() {
               </Col>
             </Form.Row>
           </Form>
+          <Col className="mt-5 mb-5">
+            <p className="text-light">
+              We respect your privacy. You may unsubscribe at any time.
+            </p>
+          </Col>
         </Row>
       </Container>
     </div>
