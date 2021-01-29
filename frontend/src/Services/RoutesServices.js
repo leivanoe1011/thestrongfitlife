@@ -8,6 +8,7 @@ import DashboardPage from "../Components/Dashboard/DashboardPage";
 import CreateUserPage from "../Components/Chat/CreateUserPage";
 import ChatroomPage from "../Components/Chat/ChatPage";
 import MainBody from "../Components/Home/MainBody";
+import MyStory from "../Components/MyStory";
 
 function CustomRoutes() {
   return (
@@ -15,6 +16,7 @@ function CustomRoutes() {
         <Route exact path="/" render={MainBody} />
         <UnPrivateRoute exact path="/login" component={LoginPage} />
         <UnPrivateRoute exact path="/register" component={RegisterPage} />
+        <UnPrivateRoute exact path="/myStory" component={MyStory} />
         <PrivateRoute
           exact
           path="/dashboard"
