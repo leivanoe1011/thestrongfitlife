@@ -29,11 +29,11 @@ function LivePrograms() {
             ></Card.Img>
             <Card.Body className="text-center">
               <Card.Title className="text-light">Unleash The Beast</Card.Title>
-              <Card.Text className="text-center">
-                <p className="text-light">
+              <Card.Text  className="text-center text-light">
+              
                   Fitness Membership with Live Workouts, Support, and
                   Accountability.
-                </p>
+           
               </Card.Text>
               <a className="btn btn-large bg-light" href="/">
                 TELL ME MORE!
@@ -54,10 +54,10 @@ function LivePrograms() {
               <Card.Title className="text-light mt-2">
                 Personal Training
               </Card.Title>
-              <Card.Text className="text-center">
-                <p className="text-light">
+              <Card.Text className="text-center text-light">
+                
                   1:1 Personalized Online Fitness Coaching.
-                </p>
+             
               </Card.Text>
               <a className="btn btn-large bg-light mt-2" href="/">
                 I WANT INFO!
@@ -76,10 +76,10 @@ function LivePrograms() {
             ></Card.Img>
             <Card.Body className="text-center">
               <Card.Title className="text-light mt-2">Testimonials</Card.Title>
-              <Card.Text>
-                <p className="text-light">
+              <Card.Text  className="text-center text-light">
+            
                   Real Transformation Stories from The Beastmode Community
-                </p>
+        
               </Card.Text>
               <a className="btn btn-large bg-light mt-1" href="/">
                 BRING ME THERE!
